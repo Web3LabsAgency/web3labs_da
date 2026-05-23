@@ -1,4 +1,4 @@
-# 🧪 Web3 Labs | Agencia Digital Educativa
+# 🧪 Web3 Labs | Agencia Digital EdTech
 
 Bienvenido al repositorio oficial de **Web3 Labs**. Somos una agencia digital enfocada en la educación y adopción de tecnologías descentralizadas. Nuestra plataforma sirve como el puente principal para que nuevos usuarios y emprendedores se integren al ecosistema Web3 de manera fluida, segura y con bases sólidas.
 
