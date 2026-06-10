@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Web3 Labs — Revisión estratégica independiente · Junio 2026</title>
+<style>
+  :root {
+    --ink: #1a1f29;
+    --ink-soft: #4a5263;
+    --paper: #fbfaf7;
+    --card: #ffffff;
+    --accent: #0e7a5f;
+    --accent-soft: #e7f3ef;
+    --warn: #b3471d;
+    --warn-soft: #fbeee7;
+    --line: #e3e0d8;
+    --gold: #8a6d1f;
+    --gold-soft: #f7f1de;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.65;
+    font-size: 17px;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 28px 80px; }
+  header {
+    border-bottom: 3px solid var(--ink);
+    padding: 56px 0 28px;
+    margin-bottom: 40px;
+  }
+  .kicker {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--accent); font-weight: 700; margin-bottom: 14px;
+  }
+  h1 { font-size: 40px; line-height: 1.15; margin: 0 0 14px; font-weight: 700; }
+  .standfirst { font-size: 20px; color: var(--ink-soft); font-style: italic; margin: 0 0 18px; }
+  .meta {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13px; color: var(--ink-soft);
+  }
+  h2 {
+    font-size: 26px; margin: 56px 0 16px; line-height: 1.25;
+    padding-top: 18px; border-top: 1px solid var(--line);
+  }
+  h2 .num { color: var(--accent); margin-right: 10px; font-variant-numeric: tabular-nums; }
+  h3 { font-size: 19px; margin: 30px 0 10px; }
+  p { margin: 0 0 16px; }
+  strong { font-weight: 700; }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid rgba(14,122,95,.35); }
+  a:hover { border-bottom-color: var(--accent); }
+  .verdict {
+    background: var(--card); border: 1px solid var(--line); border-left: 5px solid var(--accent);
+    padding: 24px 28px; margin: 0 0 8px; border-radius: 4px;
+    font-size: 19px;
+  }
+  .callout {
+    background: var(--warn-soft); border-left: 5px solid var(--warn);
+    padding: 18px 24px; margin: 22px 0; border-radius: 4px; font-size: 16px;
+  }
+  .callout-good {
+    background: var(--accent-soft); border-left: 5px solid var(--accent);
+    padding: 18px 24px; margin: 22px 0; border-radius: 4px; font-size: 16px;
+  }
+  .callout-gold {
+    background: var(--gold-soft); border-left: 5px solid var(--gold);
+    padding: 18px 24px; margin: 22px 0; border-radius: 4px; font-size: 16px;
+  }
+  table {
+    width: 100%; border-collapse: collapse; margin: 22px 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 14.5px;
+    background: var(--card);
+  }
+  th {
+    text-align: left; padding: 10px 14px; background: var(--ink); color: #fff;
+    font-weight: 600; font-size: 13px; letter-spacing: .03em;
+  }
+  td { padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  ul, ol { margin: 0 0 16px; padding-left: 26px; }
+  li { margin-bottom: 8px; }
+  .src {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 12.5px; color: var(--ink-soft);
+  }
+  .tag {
+    display: inline-block; font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+    padding: 2px 8px; border-radius: 3px; margin-right: 6px; vertical-align: middle;
+  }
+  .tag-kill { background: var(--warn-soft); color: var(--warn); }
+  .tag-keep { background: var(--accent-soft); color: var(--accent); }
+  .epigraph {
+    margin: 44px 0; padding: 26px 30px; background: var(--ink); color: #f2efe8;
+    border-radius: 6px; font-size: 19px; font-style: italic; line-height: 1.6;
+  }
+  footer {
+    margin-top: 64px; padding-top: 22px; border-top: 1px solid var(--line);
+    font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 13px; color: var(--ink-soft);
+  }
+  @media print {
+    body { font-size: 12.5px; }
+    h1 { font-size: 28px; }
+    h2 { font-size: 19px; page-break-after: avoid; }
+    .verdict, .callout, .callout-good, .callout-gold, table { page-break-inside: avoid; }
+    a { color: inherit; border-bottom: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">Revisión estratégica independiente · Confidencial</div>
+  <h1>Web3 Labs: lo que la evidencia dice de su plan — y la versión que sí funciona</h1>
+  <p class="standfirst">Investigación verificada en fuentes públicas (junio 2026), análisis pre-mortem y plan de validación de 30 días con costo ~$0.</p>
+  <div class="meta">Preparado a solicitud de los fundadores · Metodología: 7 líneas de investigación independientes con verificación web + 2 análisis adversariales (pre-mortem y caso oso/toro) · Junio 2026</div>
+</header>
+
+<div class="verdict">
+  <strong>Veredicto en una frase:</strong> la misión es buena y el viento macro está genuinamente a su favor, pero casi todos los supuestos estructurales del plan actual están invertidos por la evidencia — y sin embargo existe una versión adyacente de este negocio que sí funciona, usa el activo real que ustedes ya construyeron, y se puede probar con ~$0 en 30 días.
+</div>
+
+<h2><span class="num">01</span>Tres hallazgos que rompen el plan tal como está</h2>
+
+<h3>1.1 — Están planeando enseñar stablecoins a la población más fluida en stablecoins del planeta</h3>
+<p>Venezuela ocupa el puesto <strong>#9 mundial per cápita</strong> en adopción cripto (índice Chainalysis 2025), con <strong>$44.600 millones</strong> de volumen anual. USDT representa ~90% de las órdenes P2P en bolívares de Binance, ~10% de las compras de supermercado ya se liquidan en stablecoins, más de dos tercios del cambio de divisas fluye por plataformas cripto, e incluso PDVSA liquida la mayor parte de su petróleo en USDT.</p>
+<p>La historia monetaria dice lo mismo en todos los casos que revisamos — Ecuador 2000, Zimbabue 2009, Argentina 2023–26, y la propia dolarización venezolana (54% de las transacciones en USD ya en 2019, de abajo hacia arriba): <strong>la sustitución de moneda se propaga por necesidad, comercios y redes de pares. Ningún episodio de sustitución monetaria ha producido jamás un negocio escalado de educación pagada.</strong> Una población a 600% de inflación se auto-enseña gratis, a velocidad máxima.</p>
+<p>Los vacíos de conocimiento <em>reales</em> — y monetizables — son más estrechos y más valiosos: <strong>seguridad, autocustodia, evasión de estafas, estrategia de ahorro, DeFi</strong>, y el ~40% de la población que sigue desconectada.</p>
+
+<h3>1.2 — El cliente declarado, aritméticamente, no puede pagar</h3>
+<table>
+  <tr><th>Producto</th><th>Precio</th><th>% del ingreso mensual mediano (~$237, OVF Q1-2025)</th></tr>
+  <tr><td>Consultoría (90 min)</td><td>$30</td><td>12–30% de un mes de ingreso</td></tr>
+  <tr><td>Onboarding (3 sesiones)</td><td>$60</td><td>~25% del salario privado mediano</td></tr>
+  <tr><td>Curso</td><td>hasta $300</td><td><strong>Supera el ingreso mensual completo de casi todo el país</strong></td></tr>
+</table>
+<p>Mientras tanto, la capa gratuita es literalmente de <em>precio negativo</em>: Binance Academy <strong>le paga al usuario por aprender</strong> (Learn &amp; Earn), y la comunidad venezolana de Hive — sobre la que ustedes quieren construir — ya hace onboarding gratuito subsidiado con recompensas (rutablockchain, «Hive va a la Escuela»).</p>
+<div class="callout">
+  <strong>El competidor que más duele:</strong> la UCAB abrió en octubre 2024 la <strong>Academia BT&amp;C</strong> (14 facilitadores, marca universitaria) y vende casi exactamente el currículo propuesto por ustedes — incluyendo un curso que se llama literalmente <em>«USDT 360: Pagos, Ahorro y Seguridad»</em>, más P2P, wallets de 0 a 100 y DeFi — con muchísimo más capital de confianza que una startup sin marca y con un blog.
+</div>
+
+<h3>1.3 — El on-ramp por tarjeta alrededor del cual están diseñando no existe para Venezuela</h3>
+<ul>
+  <li><strong>MoonPay</strong> y <strong>Ramp Network</strong> listan a Venezuela explícitamente como país no soportado (lista de Ramp actualizada marzo 2026). <strong>Transak</strong> la omite por completo. <strong>Onramper</strong> agrega a esos mismos tres — hereda el vacío.</li>
+  <li><strong>Binance Pay</strong> (comercio) exige KYB de una entidad legal registrada, y Venezuela no aparece en ninguna lista publicada de elegibilidad de comercios.</li>
+  <li><strong>Los propios términos de Bitget listan a Venezuela como jurisdicción restringida.</strong> Esto contradice directamente el «tenemos acceso confirmado al API de Bitget Pay». Esa afirmación hoy carga peso estructural en su plan y probablemente es falsa: <strong>exíjanla por escrito esta semana.</strong></li>
+</ul>
+<p>El riel real que usan los venezolanos es Binance P2P + pago móvil — que no se puede incrustar como checkout de tarjeta. <em>Matiz macro a su favor:</em> tras enero 2026 el muro de sanciones está cayendo activamente — las Licencias Generales 56/57 de la OFAC (abril 2026) des-sancionaron al BCV y a tres bancos estatales, y Binance P2P los agregó al día siguiente — así que los on-ramps masivos podrían reentrar en cuestión de trimestres. Su visión de pagos puede volverse cierta más adelante; <strong>hoy es ficción</strong>, y un negocio bootstrapped no puede facturar contra un riel futuro.</p>
+
+<h2><span class="num">02</span>Veredicto sobre Hive y el token propio</h2>
+<p><span class="tag tag-kill">Matar como infraestructura</span><span class="tag tag-keep">Conservar como canal</span></p>
+<p>Lo que sobrevive al escrutinio: el modelo sin comisiones (Resource Credits) es técnicamente real, y el tooling Python existe (<code>beem</code> está muerto desde 2021; el sucesor mantenido es <code>hive-nectar</code>, v1.0.0 de mayo 2026). Lo que lo mata:</p>
+<ul>
+  <li><strong>~7.000 usuarios activos mensuales</strong> publicando en toda la cadena, sumando todos los frontends.</li>
+  <li>HIVE a ~$0,05 — <strong>−98,6% desde su máximo</strong>, ranking ~#708, con inflación de emisión en récord (~10M de HIVE nuevos/mes).</li>
+  <li>La emisión de tokens corre por <strong>Hive-Engine</strong>, una sidechain semi-centralizada — no es L1 trustless.</li>
+  <li>La comunidad venezolana de Hive es un remanente: <strong>la-colmena, su witness insignia, cerró en octubre 2025.</strong> Y culturalmente es una comunidad de ganar-por-contenido, no la audiencia de protección-contra-inflación que ustedes describen.</li>
+  <li>La vida cripto real de sus clientes corre sobre USDT/P2P. <strong>Enseñar por los rieles de Hive es enseñar los rieles equivocados.</strong></li>
+</ul>
+<div class="callout">
+  Para una empresa cuyo producto entero es <strong>credibilidad financiera</strong>, emitir un token ilíquido sobre una sidechain de una cadena en declive es auto-daño reputacional: el primer estudiante sofisticado que revise el gráfico concluirá que los profesores no siguen su propio currículo.
+</div>
+<p><strong>Si quieren una cadena para la demo de «comemos nuestra propia comida»</strong>, la respuesta 2026 es <strong>Base</strong> (paymaster de Coinbase patrocina el gas — ~$15K en créditos gratis; wallets embebidas tipo Privy gratis hasta 10K usuarios/mes) o <strong>Celo</strong> (abstracción de fees nativa del protocolo: el estudiante paga fracciones de centavo <em>en el mismo USDT que está aprendiendo a ahorrar</em> — pedagógicamente perfecto). El rol residual honesto de Hive: canal de distribución de contenido en español a costo cero (cross-post a la comunidad HiveVenezuela restante, recompensas modestas en HBD). <strong>El token propio es un «ahora no» en cualquier cadena</strong>: superficie regulatoria más fricción, cero beneficio para el usuario en esta etapa.</p>
+
+<h2><span class="num">03</span>La tesis de la economía de agentes: dirección correcta, década equivocada para facturar</h2>
+<p>El macro de stablecoins sí está de su lado: ~$322.000M de capitalización post-ley GENIUS, y Citi proyecta $1,9–4 billones (trillions) para 2030 con la demanda de dólar offshore en mercados emergentes como motor central. Pero la capa de pagos-entre-agentes es narrativa hoy: el volumen real de x402 ronda <strong>~$28.000/día a nivel global</strong>, contra una historia valuada en miles de millones. <strong>Arquitecturen para ella (APIs limpias, quizá un endpoint demo); no construyan para ella.</strong> Un cliente que todavía no existe no puede financiar un bootstrap.</p>
+
+<h2><span class="num">04</span>El activo que sí tienen — y la única jugada que arregla cuatro problemas a la vez</h2>
+<p>Su único activo real son <strong>8 meses de confianza en el terreno, en un mercado donde la confianza — no el conocimiento — es el bien escaso.</strong> El contenido gratis es infinito; la <em>ejecución acompañada</em> («hacemos tu primera transacción USDT juntos, de forma segura») no lo es. Y seguridad/anti-estafas es exactamente el dominio donde un video de YouTube no puede sustituir a una persona en quien confías.</p>
+<div class="callout-gold">
+  <strong>La inversión del cliente.</strong> El comprador que paga es el que tiene dólares: la <strong>diáspora (~8 millones de venezolanos)</strong> que patrocina el onboarding de su familia — espejo exacto del flujo de remesas que ya llega al 29% de los hogares — más los <strong>emprendedores y PYMEs</strong> dentro del país que necesitan nómina, pagos a proveedores y tesorería en USDT.<br><br>
+  <em>«Pongan a mi mamá en Maracaibo en USDT, de forma segura, de la mano, en español, con gente en el terreno»</em> es un trabajo real, doloroso y sin resolver — que la UCAB no puede atender y que Binance Academy estructuralmente no puede entregar. El comprador en Miami o Madrid paga con tarjeta por rieles que <strong>existen hoy</strong>: el problema de la entidad mercantil venezolana se evapora porque el pagador no está en Venezuela.
+</div>
+<p>El mercado masivo dentro del país se atiende <strong>gratis, como embudo</strong>. El comprador local paga en cuotas — Cashea demuestra que es conducta de masas en Venezuela (35% de los adultos, &gt;4% del PIB en volumen): ofrezcan onboarding en 3×$20 y cursos en 3–6 cuotas.</p>
+<h3>La escalera de precios que sí funciona en LatAm (patrón de los sobrevivientes)</h3>
+<table>
+  <tr><th>Peldaño</th><th>Precio</th><th>Quién paga</th></tr>
+  <tr><td>Contenido + comunidad (WhatsApp/Telegram/TikTok)</td><td>Gratis</td><td>Embudo — aquí escala su red de 8 meses</td></tr>
+  <tr><td>Taller en vivo</td><td>Gratis o $5–10</td><td>Calificación de demanda</td></tr>
+  <tr><td>Onboarding acompañado</td><td>$60 (o 3×$20)</td><td><strong>Diáspora-patrocinador</strong> + profesionales</td></tr>
+  <tr><td>Cohorte para emprendedores</td><td>~$200–250 realizados (ancla alta)</td><td>PYMEs, profesionales, diáspora — el patrón Espacio Cripto ($1.000 de lista, $220 con «beca»)</td></tr>
+  <tr><td>Comunidad recurrente</td><td>$10–30/mes</td><td>El formato que de verdad retiene</td></tr>
+  <tr><td>B2B / patrocinios</td><td>Variable</td><td>Exchanges y hasta el DHF de Hive <em>financian</em> educación en Venezuela cuando los estudiantes no pueden</td></tr>
+</table>
+
+<h2><span class="num">05</span>Recomendación técnica (pidieron argumentos, no preferencias)</h2>
+<p><strong>Los productos cuña necesitan cero código.</strong></p>
+<ul>
+  <li><strong>v0 — semana 1, $0:</strong> el blog existente + Cal.com (agenda) + WhatsApp Business + links de pago (link de Binance Pay + Zelle + USDT directo — <em>nunca un solo riel</em>: Binance ya ha sufrido bloqueos DNS en Venezuela y deslistó al Banco de Venezuela del P2P en su momento). Este es el precedente Platzi: arrancó con ~$2.000 vendiendo talleres en vivo y llegó a $2,7M de ingresos <em>antes</em> de cualquier financiamiento. «Vender el MVP para financiar el build» es el estándar documentado — <strong>pero el MVP es un link de pago, no una plataforma.</strong></li>
+  <li><strong>v1 — meses 1–2 (cuando los ingresos lo ganen):</strong> <strong>Next.js/TypeScript + Supabase</strong> en tiers gratuitos, open source si quieren. No FastAPI/Django: aquí no hay carga de ML; las necesidades son contenido, webhooks de checkout, reservas y cursos con acceso controlado, y la gravedad del tooling de agentes 2026 (Vercel mcp-handler, AI SDK, hosting gratis) está del lado TypeScript. <strong>La blockchain vive detrás de una interfaz <code>PaymentProvider</code>, como módulo — nunca como fundación.</strong></li>
+  <li><strong>v2 — mes 3+:</strong> una ruta de servidor MCP y un endpoint demo x402. Eso satisface por completo «el sitio es una demo Web3/agéntica» sin soldar la empresa a la narrativa.</li>
+</ul>
+
+<h2><span class="num">06</span>Plan de falsación: 30 días, menos de $100</h2>
+<p>Cinco condiciones deciden entre el caso oso y el caso toro. Todas son comprobables, casi todas a costo cero:</p>
+<table>
+  <tr><th>#</th><th>Prueba</th><th>Umbral de éxito</th><th>Qué falsifica si falla</th></tr>
+  <tr>
+    <td><strong>C1</strong></td>
+    <td><strong>La red caliente convierte a efectivo.</strong> Link de pago + Cal.com a su lista existente, esta semana.</td>
+    <td>≥10 onboardings pagados en 30 días. (A 1–3% de conversión de lista caliente, ~20 ventas exigen 700–2.000 contactos genuinamente calientes — esto también mide si «8 meses de comunidad» son 500 personas o 5.000.)</td>
+    <td>&lt;5 pagos = el activo es una audiencia, no una base de clientes.</td>
+  </tr>
+  <tr>
+    <td><strong>C2</strong></td>
+    <td><strong>Existe el segmento con dólares.</strong> Una landing + $50–100 de pauta IG/TikTok a venezolanos en Miami/Madrid/Bogotá: <em>«Regala seguridad financiera a tu familia».</em> En paralelo: pitch a 10 dueños de PYME conocidos (nómina/tesorería USDT).</td>
+    <td>≥30% de las conversiones pagadas vienen de diáspora o negocios; o 5+ patrocinadores diáspora compran.</td>
+    <td>Si ni diáspora ni PYMEs pagan, solo queda el cliente mediano local — y la pared de asequibilidad (§1.2) gobierna: estructuralmente inviable a estos precios.</td>
+  </tr>
+  <tr>
+    <td><strong>C3</strong></td>
+    <td><strong>Pagan por acompañamiento, no por contenido.</strong> Un taller gratuito en vivo; upsell del onboarding al final; pregunta única a cada comprador y no-comprador: <em>«¿qué te haría pagar / por qué no?»</em></td>
+    <td>≥40% de conversión taller→pago y el valor citado es la mano que acompaña («hicieron mi primera transacción conmigo»), no la información.</td>
+    <td>Si dicen «lo veo en YouTube / Binance Academy», la cuña no tiene piso.</td>
+  </tr>
+  <tr>
+    <td><strong>C4</strong></td>
+    <td><strong>Existe un riel mercantil real.</strong> Exigir por escrito el acceso al API de Bitget Pay (sus términos listan a Venezuela como restringida); intentar el KYB de comercio de Binance Pay y registrar exactamente dónde falla; cotizar incorporación en México/Colombia/Panamá/España como plan B.</td>
+    <td>Confirmación escrita de algún riel + dos rieles redundantes (USDT directo, Zelle, Hotmart — que además da cuotas).</td>
+    <td>Si ningún exchange los acepta y la incorporación extranjera no es costeable, cada venta corre por rieles informales — el mismo perfil de falla de El Dorado, que con 1M+ de usuarios salió de Venezuela en 2025.</td>
+  </tr>
+  <tr>
+    <td><strong>C5</strong></td>
+    <td><strong>La visión Hive/token es separable del negocio.</strong> Una conversación: poner los números de Hive sobre la mesa (7K usuarios/mes, −98,6%, la-colmena cerrada) y observar si el equipo actualiza o defiende.</td>
+    <td>v0 sale con cero blockchain; Hive queda como canal de contenido; el token queda en «ahora no». Dijeron que no están casados con Hive — esto lo comprueba.</td>
+    <td>Insistir en el token antes del primer ingreso revela un proyecto guiado por identidad y no por el problema — y predice que la ventana de bootstrap se quema construyendo infraestructura de valor negativo.</td>
+  </tr>
+</table>
+<div class="callout-good">
+  <strong>Regla de decisión:</strong> C1 + C2 son el par matar/continuar. Si ambas fallan, ninguna decisión técnica rescata el proyecto. Si ambas pasan, tendrán $600–1.200 de ingreso real — que, bajo su propio plan («vender el MVP para financiar el build»), es el único evento de financiamiento que importa.
+</div>
+
+<h2><span class="num">07</span>Conclusión</h2>
+<p>El viento de cola es real — superciclo de stablecoins, ventana de alivio de sanciones, Venezuela renegociando su vida financiera. Pero los vientos de cola premian a quien es dueño del riel o de la relación; <strong>nunca a quien explica el viento.</strong> Sus 8 meses de comunidad <em>son</em> la relación. Todo lo del plan que no sea eso — el backend en Hive, el token propio, los on-ramps por tarjeta para venezolanos, los cursos de $300 al asalariado mediano, el framing de economía de agentes — está o prematuro o directamente contradicho por la evidencia, y cada semana invertida ahí es una semana en que el activo de confianza se deprecia mientras la UCAB y las comunidades gratuitas consolidan el mercado.</p>
+<div class="epigraph">
+  No vendan una respuesta de $60 a una gente que ya se la enseñó a sí misma, a punta de 600% de inflación, gratis — mientras a los que pagarían $300 por proteger a sus familias nunca se les preguntó.
+</div>
+
+<footer>
+  <p><strong>Metodología.</strong> Este documento sintetiza siete líneas de investigación independientes con verificación en fuentes públicas (junio 2026) — realidad venezolana de adopción, mercado de educación cripto en español, evaluación de Hive vs. alternativas, rieles de pago y sanciones, historia monetaria y mecánica de mercados, diseño de embudo/producto, y arquitectura técnica — seguidas de dos análisis adversariales (pre-mortem y caso oso/toro con condiciones falsables). Fuentes principales: Chainalysis 2025 Global Crypto Adoption Index; Observatorio Venezolano de Finanzas (OVF, Q1-2025); listas oficiales de países soportados de MoonPay, Ramp Network y Transak; términos de servicio de Bitget; OFAC (Licencias Generales 56/57, abril 2026); catálogo Academia BT&amp;C (UCAB); datos públicos de Cashea, Platzi y Espacio Cripto; analítica on-chain de Hive (@dalz) y CoinGecko; proyecciones de stablecoins de Citi (2030).</p>
+  <p>Los hechos citados se distinguen de inferencias en el análisis subyacente; donde una afirmación clave de ustedes no pudo verificarse en fuentes públicas (acceso mercantil a Bitget Pay), el documento lo pide por escrito en lugar de asumirlo. Nada aquí es asesoría legal ni financiera.</p>
+</footer>
+
+</div>
+</body>
+</html>
